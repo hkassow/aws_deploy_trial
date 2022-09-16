@@ -1,0 +1,2 @@
+class Hat < ApplicationRecord
+end

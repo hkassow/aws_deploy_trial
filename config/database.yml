@@ -81,6 +81,8 @@ test:
 #
 production:
   <<: *default
-  database: aws_deploy_trial_production
-  username: aws_deploy_trial
-  password: <%= ENV["AWS_DEPLOY_TRIAL_DATABASE_PASSWORD"] %>
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>

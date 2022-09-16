@@ -46,6 +46,6 @@ class HatsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def hat_params
-      params.fetch(:hat, {})
+      params.fetch(:hat, {})permit(:description)
     end
 end

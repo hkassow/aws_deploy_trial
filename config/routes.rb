@@ -20,6 +20,6 @@ Rails.application.routes.draw do
 
 
    #rerouting to home path
-   get '*path' => redirect('/')
-  
+   get '*path' => redirect('/hats')
+
 end

@@ -20,8 +20,6 @@ Rails.application.routes.draw do
 
 
    #rerouting to home path
-   get '*path',
-   to: 'fallback#index',
-   constraints: ->(req) { !req.xhr? && req.format.html? }
+   get '*path' => redirect('/')
   
 end
